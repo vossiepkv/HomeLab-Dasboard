@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap'); /*-Pridi, Rubik, Yanone-Kaffeesatz-*/
+
+$color-bg:            #0D1117;
+$color-surface:       #1F2D3D;
+$color-accent:        #C9A84C;
+$color-border:        #4E5F6A;
+$color-text:          #EDEDEB;
+$color-muted:         #8aa0ad;
+$chip:                #2a3a4a;
+$chip-text:           #d9e2e8;
+$alert:               #252b33;
+$accent-contrast:     #121417;
+$font-base: 'Yanone Kaffeesatz', sans-serif;
+$font-head: 'Rubik', sans-serif;
+$font-text: 'Pridi', sans-serif;
+
+@mixin background-color {
+  background: radial-gradient(1200px 800px at 80% -20%, rgba(201,168,76,.08), transparent 60%), var(--color-bg); 
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+body{
+  margin: 0;
+  font-family: ;
+}
+
+// UP-TO: Setting Up SCSS Variables and Functions to ease dev
