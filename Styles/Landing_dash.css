@@ -51,6 +51,11 @@ body {
   transition: all 0.2s ease-in;
 }
 
+.button a {
+  text-decoration: none;
+  color: #EDEDEB;
+}
+
 button:hover {
   background: rgb(255, 212, 57);
   box-shadow: 0 0 30px 5px rgb(255, 212, 57);
