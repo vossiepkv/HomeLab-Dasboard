@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap'); /*-Pridi, Rubik, Yanone-Kaffeesatz-*/
+
+$color-bg:            #0D1117;
+$color-surface:       #1F2D3D;
+$color-accent:        #C9A84C;
+$color-border:        #4E5F6A;
+$color-text:          #EDEDEB;
+$color-muted:         #8aa0ad;
+$chip:                #2a3a4a;
+$chip-text:           #d9e2e8;
+$alert:               #252b33;
+$accent-contrast:     #121417;
+$font-base: 'Yanone Kaffeesatz', sans-serif;
+$font-head: 'Rubik', sans-serif;
+$font-text: 'Pridi', sans-serif;
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+body{
+  margin: 0;
+  background-color: $color-bg;
+}
+
+.Header-Container{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.Header {
+  flex: 1;
+  text-align: center;
+}
+
+.Header-Text{
+  font-family: $font-base;
+  font-size: 13vh;
+  background: linear-gradient(220.55deg, #FFD439 0%, #FF7A00 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.button{
+  position: absolute;
+  right: 0;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 212, 57);
+  font-size: 1.5vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.button a {
+  text-decoration: none;
+  color: $color-text;
+}
+
+button:hover {
+  background: rgb(255, 212, 57);
+  box-shadow: 0 0 30px 5px rgba(255, 212, 57, 1);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}

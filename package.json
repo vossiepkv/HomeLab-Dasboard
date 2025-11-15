@@ -1,0 +1,16 @@
+{
+  "name": "homelab-dasboard",
+  "version": "1.0.0",
+  "description": "4 x Raspberry Pi's Switch 7\" touch LCD NAS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "firebase": "^12.6.0"
+  }
+}
