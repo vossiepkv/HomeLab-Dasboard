@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Admin Sign-Up</title>
+    <link rel="StyleSheet" href="../Styles/Signup.css">
+    <script type="module" src="../Scripts/Singup.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <!-- Header -->
+     <div class="Header-Container">
+      <div class="Header">
+        <p class="Header-Text">OLYMPUS</p>
+      </div>
+
+      <div class="Admin-button">
+        <button class="button"><a class="button-link" href="../index.html">Home</a></button>
+      </div>
+     </div>
+
+     <!-- Signup Form -->
+      <div class="Signup-Container">
+        <div class="Signup-Form">
+          <form>
+            <label class="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email"> <br>
+            <label class="pass-label" for="password">Password</label>
+            <input type="password" id="password" name="password"> <br>
+            <button type="button" class="submit-button" onclick="signUp()">Signup</button>
+          </form>
+        </div>
+      </div>
+     
+
+  </body>
+</html>
